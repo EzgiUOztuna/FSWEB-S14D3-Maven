@@ -93,7 +93,7 @@ public class MainTest {
         PrintStream saveOut = System.out;
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        assertEquals(car.brake(), "the car is braking");
+        assertEquals(car.brake(),"the car is braking");
         assertThat(out.toString(), containsString(car.getClass().getSimpleName()));
     }
 
